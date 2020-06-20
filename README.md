@@ -1,26 +1,19 @@
-# Experimenting with DotNet and OpenAPI Toolchains
+# Swagger/OpenApi Petstore Auto Gen Tests for C#
 
-# Step 1) Follow this Tutorial to make  TODO project
-	- https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-3.1&tabs=visual-studio
-		- Add Microsoft.EntityFrameworkCore.SqlServer
-		- Microsoft.EntityFrameworkCore.InMemory
+Just a simple example to shamelessly try to influence my wonderful colleagues (see what I'm doing there? hahahah. ) in an effort to adopt this very useful technology. 
 
+This Techonology will allow us to 
+  1) Understand any given API at a glance (it will have an updated list of all API methods, exceptions, and default values).
+  2) Allow us to Mock a service we don't have access to.
+  3) Auto-generate tests based on our Swagger/OpenAPI contract.
+  4) Speed development time (you can create a stubbed service for which ever piece you aren't working on, or script specific sequences of requests instead of manually executing them via Postman).
+      
+Check out this projects Swagger Document located at the project root.
 
-## Scaffold a Controller
+## Running code
+- Use "Visual Studio" IDE. Press "Play"
+- It will open to the Swagger Editor where you can inspect the API.
 
-Right-click the Controllers folder.
-
-Select Add > New Scaffolded Item.
-
-Select API Controller with actions, using Entity Framework, and then select Add.
-
-In the Add API Controller with actions, using Entity Framework dialog:
-
-Select TodoItem (TodoApi.Models) in the Model class.
-Select TodoContext (TodoApi.Models) in the Data context class.
-Select Add.
-
-
-# Add the Swagger Document Gen Tool
-( https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-nswag?view=aspnetcore-3.1&tabs=visual-studio )
-
+## Viewing Swagger / Open API Documents:
+- Swagger Editor: `http://localhost:{YOUR PORT}/swagger/index.html`
+- Swagger JSON: `http://localhost:{YOUR PORT}}/swagger/1.0.0/swagger.json`
