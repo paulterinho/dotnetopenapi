@@ -1,6 +1,6 @@
-# Swagger/OpenApi Petstore Auto Gen Tests for C#
+# Swagger/OpenApi DotNetCore Example
 
-Just a simple example to shamelessly try to influence my wonderful colleagues (see what I'm doing there? hahahah. ) in an effort to adopt this very useful technology. 
+Just a simple example to shamelessly try to influence my wonderful colleagues (see what I'm doing there? hahahah. ) in an effort to more widely adopt this technology. 
 
 ## Running code
 - Use "Visual Studio" IDE. Press "Play"
