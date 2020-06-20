@@ -2,3 +2,5 @@ packages
 obj
 bin
 .vs
+**/.suo
+Properties/launchSettings.json
