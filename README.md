@@ -19,3 +19,8 @@ In the Add API Controller with actions, using Entity Framework dialog:
 Select TodoItem (TodoApi.Models) in the Model class.
 Select TodoContext (TodoApi.Models) in the Data context class.
 Select Add.
+
+
+# Add the Swagger Document Gen Tool
+( https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-nswag?view=aspnetcore-3.1&tabs=visual-studio )
+
