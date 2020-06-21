@@ -1,14 +1,13 @@
 
+#Bibliography
 
-## Experimenting with DotNet and OpenAPI Toolchains
-
-# Step 1) Follow this Tutorial to make  TODO project
+## Step 1) Follow this Tutorial to make  TODO project
 	- https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-3.1&tabs=visual-studio
 		- Add Microsoft.EntityFrameworkCore.SqlServer
 		- Microsoft.EntityFrameworkCore.InMemory
 
 
-## Scaffold a Controller
+### Scaffold a Controller
 
 Right-click the Controllers folder.
 
@@ -23,7 +22,7 @@ Select TodoContext (TodoApi.Models) in the Data context class.
 Select Add.
 
 
-# Add the Swagger Document Gen Tool
+## Step 2) Add the Swagger Document Gen Tool
 ( https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-nswag?view=aspnetcore-3.1&tabs=visual-studio )
 
 Customize API documentation
@@ -56,3 +55,6 @@ services.AddSwaggerDocument(config =>
         };
     };
 });
+
+
+https://github.com/RicoSuter/NSwag/wiki/NSwag.MSBuild
