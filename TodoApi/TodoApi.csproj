@@ -21,7 +21,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Generated\" />
+	  <Folder Include="Automation\Generated\" />
 	</ItemGroup>
 
 	<!-- Commmon Env Vars located here: https://docs.microsoft.com/en-us/cpp/build/reference/common-macros-for-build-commands-and-properties?view=vs-2019 -->
@@ -36,15 +36,8 @@
 	<Target Name="NSwag" AfterTargets="Build">
 		
 		<!-- Create the Swagger Document from the TodoApi assembly specified int he nswag.json config file -->
-		<Exec Command="GenFiles.bat" />
+		<!-- <Exec Command="Automation\GenFiles.bat" /> -->
 		
-		<!-- Create the C# Controllers -->
-		<!--<Exec Command="$(NSwagExe)  nswag swagger2csclient /input:Generated\TodoApi.Swagger.json /output:Generated\TodoApi.Generated.cs /namespace:com.walterp.todo" /> -->
-
 	</Target>
-	
-	<!--<Target Name="PostBuild" AfterTargets="Build">
-		<Exec Command="$(NSwagExe) run nswag.json /runtime:NetCore31" />
-	</Target>-->
 	
 </Project>
