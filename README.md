@@ -1,6 +1,6 @@
 # Swagger/OpenApi DotNetCore Example
 
-Just a simple example to shamelessly try to influence my wonderful colleagues (see what I'm doing there? hahahah. ) in an effort to more widely adopt this technology. 
+Just a simple example to  illustrate how OpenApi / Swagger might be useful for dotnet programs. 
 
 ## Running code
 - Use "Visual Studio" IDE. Press "Play"
