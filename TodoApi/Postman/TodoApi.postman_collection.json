@@ -1,9 +1,0 @@
-{
-	"info": {
-		"_postman_id": "dd352c62-a8ad-4e18-9804-f0166a5dddff",
-		"name": "TodoApi",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-	},
-	"item": [],
-	"protocolProfileBehavior": {}
-}

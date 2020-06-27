@@ -23,7 +23,7 @@
       "outputType": "Swagger2",
       "newLineBehavior": "Auto",
       "assemblyPaths": [
-        "../bin/Debug/netcoreapp3.1/TodoApi.dll"
+        "bin/Debug/netcoreapp3.1/TodoApi.dll"
       ],
       "assemblyConfig": null,
       "referencePaths": [],

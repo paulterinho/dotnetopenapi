@@ -25,18 +25,31 @@
 	</ItemGroup>
 
 	<!-- Commmon Env Vars located here: https://docs.microsoft.com/en-us/cpp/build/reference/common-macros-for-build-commands-and-properties?view=vs-2019 -->
-	<Target Name="TestTarget" AfterTargets="Build">
+	<!--<Target Name="TestTarget" AfterTargets="Build">
 		<Message Importance="High" Text="Application: $(NSwagExe)" />
 		<Message Importance="High" Text="DLL: $(OutDir)\$(ProjectName).dll" />
 		<Message Importance="High" Text="API: $(SolutionDir)API\bin\$(Configuration)\$(FrameworkVersion)" />
 		<Message Importance="High" Text="$(NSwagExe) aspnetcore2openapi /assembly:$(SolutionDir)$(OutDir)$(ProjectName).dll /output:swagger.json" />
 		
-	</Target>
+	</Target>-->
 	
 	<Target Name="NSwag" AfterTargets="Build">
-		
+
+		<Message Importance="High" Text="Application: $(NSwagExe)" />
 		<!-- Create the Swagger Document from the TodoApi assembly specified int he nswag.json config file -->
-		<!-- <Exec Command="Automation\GenFiles.bat" /> -->
+		<Exec Command="nswag run nswag.json /runtime:NetCore31" />
+		<Exec Command="nswag swagger2csclient /input:Generated\TodoApi.Swagger.json /output:Generated\TodoApi.Generated.cs.txt /namespace:com.walterp.todo" />
+		<Exec Command="nswag swagger2tsclient /input:Generated\TodoApi.Swagger.json /output:Generated\TodoApi.Generated.ts.txt /namespace:com.walterp.todo" />
+
+	</Target>
+
+	<Target Name="NSwagClean" AfterTargets="Clean">
+
+		<Message Importance="High" Text="Cleaning generated files..." />
+		<ItemGroup>
+			<FilesToDelete Include="Generated\*"/>
+		</ItemGroup>
+		<Delete Files="@(FilesToDelete)" />
 		
 	</Target>
 	

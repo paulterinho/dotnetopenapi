@@ -58,3 +58,6 @@ services.AddSwaggerDocument(config =>
 
 
 https://github.com/RicoSuter/NSwag/wiki/NSwag.MSBuild
+
+Rico Suter:
+- https://www.youtube.com/watch?v=lF9ZZ8p2Ciw
