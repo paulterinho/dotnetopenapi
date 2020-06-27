@@ -4,4 +4,4 @@ bin
 .vs
 **/.suo
 Properties/launchSettings.json
-Automation/Generated
+Generated/*
